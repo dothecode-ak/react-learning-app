@@ -1,13 +1,12 @@
 import React, { useState } from "react";
-import "./Todo.css";
+import "../todo-app/Todo.css";
 import { useSelector, useDispatch } from "react-redux";
-import { addTheUser, deleteTheUser, clearTheUser } from "./redux/action";
-import Footer from "./components/Footer";
+import { addTheUser, deleteTheUser, clearTheUser } from "../redux/action";
+import Footer from "../components/Footer";
 const TodoList = () => {
   const [inputData, setInputData] = useState("");
   const dispatch = useDispatch();
   const list = useSelector((state) => state.todoReducers.list);
-  console.log(list);
   return (
     <>
       <div className="main-div">
