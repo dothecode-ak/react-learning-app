@@ -1,9 +1,11 @@
 import "./App.css";
+import TodoList from "./TodoList";
 // import ClassCmp from "./basic/ClassCmp";
 // import FunCmp from "./basic/FunCmp";
 // import HelloCmp from "./basic/HelloCmp";
 // import PropState from "./basic/PropState";
 // import EventHandling from "./basic/EventHandling";
+
 function App() {
   return (
     <div className="App">
@@ -14,7 +16,8 @@ function App() {
         This is the user details
       </PropState>
       <EventHandling /> */}
-      <h2>Redux</h2>
+      {/* <h2>Redux</h2> */}
+      <TodoList />
     </div>
   );
 }
